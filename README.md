@@ -126,17 +126,27 @@ Please don't expect full help for the free **LITE** version.
 
 ## How to run on Linux
 
-1. Install requirements:
+1. Install requirements (not recommended fully):
    ```sh
    chmod +x install_requirements.sh start.sh
    ./install_requirements.sh
    ./start.sh
    ```
-2. Start the aimbot:
+2. Configure sensitivity:
+   ```sh
+   python lunar.py setup
+   ```
+
+2. Start the aimbot (method 1 (not recommended fully)):
    ```sh
    chmod +x start.sh
    ./start.sh
    ```
+   Start the aimbot (method 2):
+   ```sh
+   python lunar.py
+   ```
+3. F1 is changed to `Mouse button 4` and F2 is changed to `Mouse button 5`
 
 ## Architecture Overview
 
