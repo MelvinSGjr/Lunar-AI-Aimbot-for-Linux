@@ -208,3 +208,7 @@ On Linux, all mouse movement and clicks are handled by the [pyautogui](https://p
   ```
 - If xdotool is not installed, the aimbot will not be able to move the mouse in games.
 - **Note:** pyautogui does not work in fullscreen games or with raw input. xdotool is required for proper mouse movement in shooters.
+
+---
+
+**Tested on EndeavourOS with Cinnamon DE and using CUDA**
