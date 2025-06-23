@@ -1,6 +1,7 @@
 # AI-Aimbot (Linux Edition)
 
 **This version is adapted for Linux by MelvinSGjr, based on the original [AI-Aimbot](https://github.com/xxreflextheone/AI-Aimbot) by [xxreflextheone](https://github.com/xxreflextheone).**
+**Trigger bot is not working**
 
 # 🧠 YoloV12 AI Aimbot - Lunar LITE
 
@@ -27,8 +28,6 @@ It features an updated triggerbot, modernized packages, and YOLOv12 support.
 - ✅ Built-in UI  
 - ✅ Improved detection accuracy  
 - ✅ Supports **YOLOv8**, **YOLOv10**, **YOLOv12**, and **TensorRT**  
-- ✅ Xbox controller support
-- ✅ Logitech GHUB mouse input
 - ✅ Works on AMD and NVIDIA graphics cards
 
 [Download Lunar V2](https://gannonr.com/lunar)
@@ -162,7 +161,7 @@ flowchart TD
     subgraph Linux
         A1["mss: Screen Capture"]
         B1["ultralytics.YOLO: Object Detection"]
-        C1["pyautogui: Mouse Move/Click"]
+        C1["pyautogui + xdotool: Mouse Move"]
     end
     A1 --> B1 --> C1
 ```
@@ -181,7 +180,7 @@ flowchart TD
 
 ## Linux Mouse Control
 
-On Linux, all mouse movement and clicks are handled by the [pyautogui](https://pyautogui.readthedocs.io/en/latest/) library, which is cross-platform and does not require any DLLs or native extensions. This replaces the Windows-only ddxoft DLL and win32api/ctypes logic.
+On Linux, all mouse movement and clicks are handled by the [pyautogui](https://pyautogui.readthedocs.io/en/latest/) library, which is cross-platform and does not require any DLLs or native extensions. The `xdotool` replaces the Windows-only ddxoft DLL and win32api/ctypes logic.
 
 - **No DLLs or Windows binaries are required.**
 - All mouse actions are simulated at the OS level and work in any X11/Wayland environment.
